@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load staticfiles %}
+</head>
+<body>
+    {% if word == 'all' %}
+        <img src="{% static 'ninja/img/tmnt.png' %}" alt="ninja picture">
+    {% endif %}
+    {% if color == 'blue' %}
+        <img src="{% static 'ninja/img/leonardo.jpg' %}" alt="ninja picture">
+    {% endif %}
+    {% if color == 'orange' %}
+        <img src="{% static 'ninja/img/michelangelo.jpg' %}" alt="ninja picture">
+    {% endif %}
+    {% if color == 'red' %}
+        <img src="{% static 'ninja/img/raphael.jpg' %}" alt="ninja picture">
+    {% endif %}
+    {% if color == 'purple' %}
+        <img src="{% static 'ninja/img/donatello.jpg' %}" alt="ninja picture">
+    {% endif %}
+    {% if april == True %}
+        <img src="{% static 'ninja/img/notapril.jpg' %}" alt="ninja picture">
+    {% endif %}
+
+</body>
+</html>
